@@ -1,0 +1,27 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+  categories:
+    - title: Experiments
+      labels:
+        - experiment:*
+    - title: Features
+      labels:
+        - type:feature
+    - title: Fixes
+      labels:
+        - type:fix
+    - title: Docs
+      labels:
+        - area:docs
+    - title: CI & tooling
+      labels:
+        - area:ci
+        - area:tooling
+    - title: Dependencies
+      labels:
+        - dependencies
+    - title: Other
+      labels:
+        - "*"

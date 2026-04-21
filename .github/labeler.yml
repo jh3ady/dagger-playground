@@ -1,0 +1,35 @@
+'sdk:go':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'experiments/**/go/**'
+'sdk:ts':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'experiments/**/ts/**'
+'sdk:python':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'experiments/**/python/**'
+'experiment:01-matrix-pg-compat':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'experiments/01-matrix-pg-compat/**'
+'area:ci':
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/**'
+          - '.github/dependabot.yml'
+'area:docs':
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'LICENSE'
+'area:tooling':
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.editorconfig'
+          - '.gitattributes'
+          - '.tool-versions'
+          - '.nvmrc'
+          - 'biome.json'
+          - 'ruff.toml'

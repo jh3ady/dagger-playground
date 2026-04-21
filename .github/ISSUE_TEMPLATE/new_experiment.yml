@@ -1,0 +1,43 @@
+name: New experiment proposal
+description: Propose a new Dagger experiment to add under experiments/.
+title: "[experiment] "
+labels: ["type:experiment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Experiments have a fixed shape: one folder per experiment, one subfolder per SDK, exposed Dagger functions, and a FINDINGS.md.
+  - type: input
+    id: slug
+    attributes:
+      label: Slug
+      description: Kebab-case, descriptive. Will become `experiments/NN-<slug>`.
+      placeholder: "release-multiarch-publish"
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: What about Dagger do you want to test or demonstrate?
+    validations:
+      required: true
+  - type: checkboxes
+    id: sdks
+    attributes:
+      label: SDKs to cover
+      options:
+        - label: Go
+        - label: TypeScript
+        - label: Python
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: What makes this experiment "done"? Be concrete.
+    validations:
+      required: true
+  - type: textarea
+    id: followups
+    attributes:
+      label: Potential follow-ups

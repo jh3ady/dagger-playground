@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dagger official docs
+    url: https://docs.dagger.io
+    about: Upstream Dagger documentation and SDK references.
+  - name: Direct contact
+    url: mailto:admin@jdevelop.io
+    about: For private security reports or freelance inquiries.
